@@ -1,0 +1,47 @@
+h1{
+    text-align:center;
+    font-size:30px;
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+
+  
+  
+  h2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align:center;
+    font-size:25px;
+    font-family: 'Tajawal', sans-serif;
+  }
+  
+  .crop {
+    max-width: 100px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .crop img{
+      display: block;
+      margin: 0 auto;
+      height: auto;
+      width: 100%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+  }
+
+h5{
+    text-align:center;
+    font-size:30px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+p{
+    text-align:center;
+    font-size:12px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+  

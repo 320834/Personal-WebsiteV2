@@ -1,0 +1,40 @@
+.profile {
+  position: relative;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+
+  left: 40%;
+}
+
+.bod {
+  display: flex;
+
+  margin-top: 10vh;
+}
+
+.text-h {
+  text-align: center;
+  font-size: 60px;
+
+  cursor: pointer;
+}
+
+.text-p {
+  text-align: center;
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+.left {
+  width: 20vw;
+}
+
+.right {
+  width: 20vw;
+}
+
+.center {
+  width: 60vw;
+}

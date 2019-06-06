@@ -1,0 +1,36 @@
+.bodAbout {
+  display: flex;
+}
+
+.left {
+  width: 20vw;
+}
+
+.center {
+  width: 60vw;
+}
+
+.right {
+  width: 20vw;
+}
+
+.padAbout {
+  height: 20vh;
+}
+
+.image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+.media {
+  text-align: center;
+}
+
+.padAbout1 {
+  height: 5vh;
+}

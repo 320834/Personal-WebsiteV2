@@ -1,0 +1,111 @@
+doctype html
+head
+  title &#x5357;&apos;s and Justin&apos;s Amazing Sound Project
+  link(rel='stylesheet' type='text/css' href='stylesheets/soundStyle.css')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  link(href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Tajawal' rel='stylesheet')
+  script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')
+audio#baseSoundOne(src='assets/clap.wav')
+audio#baseSoundTwo(src='assets/snap.wav')
+audio#baseSoundThree(src='assets/button.wav')
+audio#baseSoundFour(src='assets/locker.wav')
+audio#baseSoundFive(src='assets/cardboard.wav')
+audio#baseSoundSix(src='assets/paper.wav')
+audio#baseSoundSeven(src='assets/bin.wav')
+audio#baseSoundEight(src='assets/sponge.wav')
+#top
+div(style='height: 50px')
+.container(style='display: flex; flex-wrap: wrap')
+  .col-3
+  .col-6(style='display:flex')
+    h1 Have you considered that sounds around us can be musical?
+  .col-3
+  div(style='height: 40px')
+  .col-3
+  .col-6(style='display:flex')
+    h2
+      | Follow our project, and musicalize your surroundings!
+  .col-3
+  div(style='height: 10px')
+  .col-2
+  .col-2
+    .crop
+      img#clap(onclick='playClap()' style='border:solid; border-width:5px; border-color:#F29B00' src='assets/img/clap.jpg' alt='clap')
+  .col-2
+    .crop
+      img#snap(onclick='playSnap()' style='border:solid; border-width:5px; border-color:#395043' src='assets/img/snap.jpg' alt='snap')
+  .col-2
+    .crop
+      img#button(onclick='playButton()' style='border:solid; border-width:5px; border-color:#FFFCFD' src='assets/img/button.jpg' alt='button')
+  .col-2
+    .crop
+      img#locker(onclick='playLocker()' style='border:solid; border-width:5px; border-color:#0E6681' src='assets/img/locker.jpg' alt='locker')
+  .col-2
+  div(style='height: 40px')
+  .col-2
+  .col-2
+    .crop
+      img#cardboard(onclick='playCard()' style='border:solid; border-width:5px; border-color:#D3AF7C' src='assets/img/cardboard.jpg' alt='cardboard')
+  .col-2
+    .crop
+      img#paper(onclick='playPaper()' style='border:solid; border-width:5px; border-color:#FE7F2D' src='assets/img/paper.jpg' alt='paper')
+  .col-2
+    .crop
+      img#bin(onclick='playBin()' style='border:solid; border-width:5px; border-color:#3158FF' src='assets/img/bin.jpg' alt='bin')
+  .col-2
+    .crop
+      img#sponge(onclick='playSponge()' style='border:solid; border-width:5px; border-color:#3BFFE1' src='assets/img/sponge.jpg' alt='sponge')
+  .col-2
+  div(style='height: 150px')
+  .col-3
+  .col-6(style='display:flex')
+    .col-3
+    a#scrollDown.btn.btn-primary.col-6(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+      | Click Here To Start
+    .col-3
+  .col-3
+#collapseExample.collapse
+  .container(style='display: flex')
+    .col-2
+    #content.col-8
+      br
+      div(style='display:flex')
+        .col-4
+        h1.col-4
+        .col-4
+      br
+      div(style='display:flex')
+        .col-4
+        h5.col-4 Quick Start
+        .col-4
+      div(style='display: flex; flex-wrap: wrap')
+        p.col-4 1. Click On grey tiles. You should see the tile change color
+        p.col-4 2. Press Play/Resume Button
+        p.col-4 Tips: You can click and drag on the grey tiles.
+      br
+      div(style='display: flex')
+        .col-2
+        button#start.col-2.btn.btn-success(data-toggle='tooltip' data-placement='top' title='Press To Play Or Resume Beat') Play/Resume
+        .col-1
+        button#stop.col-2.btn.btn-danger(data-toggle='tooltip' data-placement='top' title='Press To Stop Beat') Stop
+        .col-1
+        button#reset.col-2.btn.btn-warning(data-toggle='tooltip' data-placement='top' title='Press To Reset Grey Tiles') Reset
+        .col-2
+      br
+      div(style='display: flex')
+        .col-3
+        button.btn.col-3
+          b Adjust Speed:
+        p.col-1
+        input#slider.col-3(type='range' min='1' max='10')
+        .col-3
+      br
+      #board
+      br
+      br
+    .col-2
+.col-12(style='height: 1px')
+p#bottom
+script(type='text/javascript' src='javascripts/soundScript.js')

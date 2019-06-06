@@ -1,0 +1,57 @@
+.bodSnake {
+  display: flex;
+}
+
+.left {
+  width: 20vw;
+}
+
+.center {
+  width: 60vw;
+}
+
+.right {
+  width: 20vw;
+}
+
+.instructionsDiv {
+  color: black;
+}
+
+.highscoresDiv {
+  color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10;
+}
+
+.padSnake {
+  height: 5vh;
+}
+
+#demoCanvas {
+  border: solid;
+}
+
+.title {
+  text-align: center;
+}
+
+.padSnake1 {
+  height: 5vh;
+}
+
+.instructionsBut {
+  margin-left: 45%;
+}
+
+.highscoreBut {
+  margin-left: 45%;
+}
+
+.demoCanvas {
+  margin-left: 30%;
+}

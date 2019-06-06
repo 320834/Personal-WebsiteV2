@@ -1,0 +1,43 @@
+.bodWordfinder {
+  display: flex;
+}
+
+.left {
+  width: 20vw;
+}
+
+.center {
+  width: 60vw;
+}
+
+.left {
+  width: 20vw;
+}
+
+.padword {
+  height: 5vh;
+}
+
+.contain {
+  display: flex;
+}
+
+.result {
+  color: black;
+}
+
+.title {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+.contain {
+  margin-left: 40%;
+}
+
+.result {
+  margin-left: 45%;
+}

@@ -1,0 +1,57 @@
+extends layout
+
+block content
+    link(rel="stylesheet", href="stylesheets/snakeStyle.css")
+    link(rel="stylesheet", href="stylesheets/animate.css")
+    script(language="javascript" type="text/javascript" src = "https://code.createjs.com/1.0.0/easeljs.min.js")
+    div(class = "bodSnake main" onkeypress = "changeMove(event)" id = "ma")
+        div(class = "left")
+        div(class = "bounceIn center")
+            div(class = "padSnake")
+            h1(class = "title") Javascript Snake
+            div(class = "padSnake1")
+            button(type = "button" class = "btn btn-info instructionsBut" data-toggle="modal" data-target='#instructionsModal') Instructions
+             button(type = "button" class = "btn btn-dark highscoreBut" data-toggle="modal" data-target='#highscoresModal') Highscores
+            div(class="modal fade instructionsDiv" id="instructionsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                div(class = "modal-dialog" role = "document")
+                    div(class = "modal-content")
+                        div(class = "modal-header")
+                            h5(class = "modal-title" id = "exampleModalLabel") Instructions
+                            button(type = "button" class = "close" data-dismiss="modal" aria-label="Close")
+                                span(aria-hidden="true") &times;
+                        div(class = "modal-body")
+                            p Objective: Control the snake and consume the red blocks. See how long you can grow the snake.
+                            p Use the keys WASD to start the snake
+                            p W - Up
+                            p A - Left
+                            p S - Down
+                            p D - Right
+                        div(class = "modal-footer")
+                            button(type = "button" class = "btn btn-secondary" data-dismiss = "modal") Close
+            div(class="modal fade highscoresDiv" id="highscoresModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true")
+                div(class = "modal-dialog" role = "document")
+                    div(class = "modal-content")
+                        div(class = "modal-header")
+                            h5(class = "modal-title" id = "exampleModalLabel") Highscores
+                            button(type = "button" class = "close" data-dismiss="modal" aria-label="Close")
+                                span(aria-hidden="true") &times;
+                        div(class = "modal-body")
+                            div(class = 'container')
+                                div Name
+                                div Score
+                                div(class = "1a") 3
+                                div(class = "1b") 4
+                                div(class = "2a") 5 
+                                div(class = "2b") 6 
+                                div(class = "3a") 7
+                                div(class = "3b") 8 
+                                div(class = "4a") 9 
+                                div(class = "4b") 10
+                                div(class = "5a") 11
+                                div(class = "5b") 12
+                        div(class = "modal-footer")
+                            button(type = "button" class = "btn btn-secondary" data-dismiss = "modal") Close
+            div(class = 'padSnake1')
+            canvas(class = "demoCanvas" id = "demoCanvas" width = "500" height = "500")
+        div(class = "right")
+    script(src="javascripts/snake.js")

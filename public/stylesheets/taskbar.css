@@ -1,0 +1,58 @@
+body {
+  background-color: #99c1ff;
+  animation: bgColor 40s infinite linear;
+  color: white;
+  font: comic;
+}
+
+#mainDiv {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.pad {
+  height: 2vh;
+}
+
+.title {
+  height: 5vh;
+
+  font-family: "Helvetica", "sans-serif";
+}
+
+#left {
+  width: 20vw;
+}
+
+#right {
+  width: 20vw;
+}
+
+#center {
+  width: 60vw;
+}
+
+.navigationbar {
+  background-color: transparent;
+}
+
+@keyframes bgColor {
+  17% {
+    background-color: #99c1ff;
+  }
+  33% {
+    background-color: #8bc8e8;
+  }
+  50% {
+    background-color: #a6f8ff;
+  }
+  67% {
+    background-color: #8be8d6;
+  }
+  84% {
+    background-color: #99ffce;
+  }
+  100% {
+    background-color: #99c1ff;
+  }
+}
